@@ -1,0 +1,207 @@
+/* 
+
+--- 01 TYPOGRAPHY
+
+- Font sizes (px)
+Default set at : 10px
+
+- Font weight:
+Regular: 400
+Bold: 700
+
+- Line heights (rem)
+Default: 1
+Title (display): 4.4.
+Mobile (display): 3.2
+Text (display): 2.5
+
+- Letter spacing (px)
+Stats: 1px
+
+--- 02 COLORS
+
+Primary* (main - draw attention):
+#1B1937
+
+- Tints
+
+- Shades
+#0A0C1C
+
+- Accents (Secondary)
+#ab5cdb
+
+- Neutrals
+rgba(255, 255, 255, 0.75);
+hsla(0, 0%, 100%, 0.6)
+
+- Greys*
+
+--- 03 IMAGES
+--- 04 ICONOGRAPHY
+
+--- 05 SHADOWS
+
+--- 06 BORDER RADIUS (px)
+Default: 8px
+
+--- 07 WHITESPACE
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 16px (default) * 62.5% = 10px = 1 rem */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0a0c1c;
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 54rem;
+  /* default align-items, justify items - stretch */
+}
+
+.insights {
+  /* center the grid */
+  margin: 17.7rem auto;
+  background-color: #1b1937;
+  width: 100%;
+  max-width: 111rem;
+  border-radius: 8px;
+  /* hide picture overwrite - get border radius to work */
+  overflow: hidden;
+}
+
+.insights-text-box {
+  padding: 7.1rem 9.5rem 5.9rem 7.2rem;
+}
+
+.insights-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 4.4rem;
+  margin-bottom: 2.5rem;
+}
+.insight-word {
+  color: #ab5cdb;
+}
+
+.insights-text {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 7.2rem;
+}
+
+.insights-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(170, 92, 219, 0.61),
+      rgba(170, 92, 219, 0.61)
+    ),
+    url("../img/image-header-desktop.jpg");
+  background-size: cover;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 6rem;
+  row-gap: 0.2rem;
+}
+
+.stat {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.stat-text {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+
+@media (max-width: 40rem) {
+  .grid-2-cols,
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .insights {
+    max-width: 32.7rem;
+  }
+
+  .insights-text-box {
+    padding: 4rem 3.15rem 3.15rem 3.15rem;
+    text-align: center;
+  }
+
+  .insights-title {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .insights-text {
+    margin-bottom: 4rem;
+    line-height: 2.5rem;
+  }
+
+  .insights-img-box {
+    grid-row: 1;
+    height: 24rem;
+    width: 32.7rem;
+  }
+
+  .stat-text {
+    margin-bottom: 2.4rem;
+  }
+
+  .stat-text:last-child {
+    margin-bottom: 3.25rem;
+  }
+
+  .stat-text-templates {
+    grid-row: 4;
+  }
+  .stat-text-companies {
+    grid-row: 2;
+  }
+  .stat-text-queries {
+    grid-row: 6;
+  }
+}
