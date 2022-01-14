@@ -114,12 +114,14 @@ img {
 }
 
 .insights-img-box {
+  /* remove opacity and use background blend to get it to work - background-blend-mode controls how the image and the colour blends */
   background-image: linear-gradient(
       to right bottom,
-      rgba(170, 92, 219, 0.61),
-      rgba(170, 92, 219, 0.61)
+      rgba(170, 92, 219),
+      rgba(170, 92, 219)
     ),
     url("../img/image-header-desktop.jpg");
+  background-blend-mode: multiply;
   background-size: cover;
 }
 
