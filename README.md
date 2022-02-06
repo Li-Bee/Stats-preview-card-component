@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-preview-card-component-using-html-and-css-Rc4PYBa_8)
-- Live Site URL: [Add live site URL here](https://li-bee.github.io/Stats-preview-card-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-preview-card-component-using-html-and-css-Rc4PYBa_8]
+- Live Site URL: [https://li-bee.github.io/Stats-preview-card-component/]
 
 ## My process
 
